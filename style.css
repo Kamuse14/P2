@@ -38,6 +38,11 @@ p
 margin-right: 10px;
 }
 
+header strong /*écrire uniquement "Karine" en teal*/
+{
+	color: teal;
+}
+
 section i
 {
 	padding-right: 10px;
@@ -78,30 +83,9 @@ td
 	padding-left: 10px;
 }
 
+/* //////////// ORGANISATION  DES DIFFERENTS BLOCS /////////// */
 
-/* ////////// Style page adapté au format mobile /////////// */
-@media all and (max-width: 1024px)
-{
-	body
-	{
-		width: 70%;
-		margin: auto;
-	}
-
-	header
-	{
-		margin-top: 10px;
-	}
-
-	section
-	{
-		width: auto;
-		flex-direction: column;
-	}
-}
-
-/* ////////// Organisation des différents blocs /////////// */
-
+/* /////////////////////////  Le liseré /////////////////////// */
 #conteneur
 {
 	display: flex;
@@ -136,18 +120,13 @@ td
 	font-size: 2.5em;
 }
 
+/* ///////////////// Le bloc cv ////////////////// */
 header
 {
 	justify-content: space-around;
 	text-align: left;
 	padding-right: 10px;
 	margin: 20px;
-}
-
-
-header strong /*écrire uniquement "Karine" en teal*/
-{
-	color: teal;
 }
 
 section
@@ -162,8 +141,30 @@ td /*alignement des cellules en haut*/
 	vertical-align: top;
 }
 
-/*////forcer le taille des cellules/// marche pas :(  //*/
-.td_exp
+.td_exp /* largeur d'un colonne*/
 {
-	min-width: 50pt;
+	min-width: 120px;
+}
+
+
+
+/* ////////// Style page adapté au format mobile /////////// */
+@media all and (max-width: 1024px)
+{
+	body
+	{
+		width: 70%;
+		margin: auto;
+	}
+
+	header
+	{
+		margin-top: 10px;
+	}
+
+	section
+	{
+		width: auto;
+		flex-direction: column;
+	}
 }
