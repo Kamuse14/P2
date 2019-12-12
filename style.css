@@ -135,6 +135,10 @@ section
 	justify-content: space-around;
 }
 
+#mes_competences
+{
+	min-width: 250px;
+}
 
 td /*alignement des cellules en haut*/
 {
