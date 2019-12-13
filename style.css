@@ -45,9 +45,9 @@ header strong /*écrire uniquement "Karine" en teal*/
 
 header hr
 {
-	width: 50px;
+	width: 35px;
 	color:  #00695C;
-	margin: 0px 5px 10px 20px;
+	margin: 0px 5px 10px 0px;
 	padding-top: 0px;
 }
 
@@ -63,6 +63,12 @@ li
 	background-repeat: no-repeat;
 	background-position: 0 0.1em;
 	padding-left: 25px;
+}
+
+h1
+{
+margin-bottom: 0px; /* ne suffit pas à réduire l'interligne */
+padding-bottom: 0px; /* pas d'effet */
 }
 
 h2
@@ -125,6 +131,12 @@ td
 	margin : 1em 2em 1em 2em;
 }
 
+/* Je le mets en commentaires parce que ça ne fonctionne pas */
+#hobbies
+{
+	position: static;
+	bottom: 0;
+} 
 
 #loisirs i /*bordures et positionnement des icones*/
 {
@@ -152,7 +164,7 @@ section
 
 #mes_competences
 {
-	min-width: 250px;
+	min-width: 300px;
 }
 
 td /*alignement des cellules en haut*/
