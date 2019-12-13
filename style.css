@@ -43,6 +43,14 @@ header strong /*écrire uniquement "Karine" en teal*/
 	color: teal;
 }
 
+header hr
+{
+	width: 50px;
+	color:  #00695C;
+	margin: 0px 5px 10px 20px;
+	padding-top: 0px;
+}
+
 section i
 {
 	padding-right: 10px;
@@ -62,7 +70,14 @@ h2
 	color: teal;
 	font-family: 'acmeregular';
 	text-align: left;
-	margin-left: 30px;
+	margin:20px 20px 0px 30px;
+}
+
+hr
+{
+	color: #00695C;
+	margin: 0px 5px 10px 20px;
+	padding-top: 0px;
 }
 
 h3
