@@ -33,7 +33,7 @@ p
 	text-align: justify;
 }
 
-#lisere p
+aside p
 {margin-left: 10px;
 margin-right: 10px;
 }
@@ -111,7 +111,7 @@ td
 {
 	display: flex;
 }
-#lisere
+aside
 {
 	background-color: #4DB6AC;
 	width: 350px;
@@ -131,12 +131,12 @@ td
 	margin : 1em 2em 1em 2em;
 }
 
-/* Je le mets en commentaires parce que ça ne fonctionne pas */
+/* Je le mets en commentaires parce que ça ne fonctionne pas 
 #hobbies
 {
 	position: static;
 	bottom: 0;
-} 
+} */
 
 #loisirs i /*bordures et positionnement des icones*/
 {
@@ -179,7 +179,7 @@ td /*alignement des cellules en haut*/
 
 
 
-/* ////////// Style page adapté au format mobile /////////// */
+/* ////////// Style page adapté aux différents formats /////////// */
 @media all and (max-width: 1024px)
 {
 	body
@@ -199,3 +199,9 @@ td /*alignement des cellules en haut*/
 		flex-direction: column;
 	}
 }
+
+@media all and (max-device-width: 480px)
+{
+    /* Mes règles CSS pour les mobiles ici */
+}
+
