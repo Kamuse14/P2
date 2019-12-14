@@ -34,8 +34,9 @@ p
 }
 
 aside p
-{margin-left: 10px;
-margin-right: 10px;
+{
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 header strong /*écrire uniquement "Karine" en teal*/
@@ -43,7 +44,7 @@ header strong /*écrire uniquement "Karine" en teal*/
 	color: teal;
 }
 
-header hr
+header hr /*petite ligne sous Développeuse*/
 {
 	width: 35px;
 	color:  #00695C;
@@ -51,18 +52,9 @@ header hr
 	padding-top: 0px;
 }
 
-section i
+section i /*retrait des icones*/
 {
 	padding-right: 10px;
-}
-
-li
-{
-	list-style-type: none;
-	background-image: url(images/puce.png);
-	background-repeat: no-repeat;
-	background-position: 0 0.1em;
-	padding-left: 25px;
 }
 
 h1
@@ -79,11 +71,20 @@ h2
 	margin:20px 20px 0px 30px;
 }
 
-hr
+hr /*grandes lignes sous les h2*/
 {
 	color: #00695C;
 	margin: 0px 5px 10px 20px;
 	padding-top: 0px;
+}
+
+li /*liste avec puces*/
+{
+	list-style-type: none;
+	background-image: url(images/puce.png);
+	background-repeat: no-repeat;
+	background-position: 0 0.1em;
+	padding-left: 25px;
 }
 
 h3
@@ -114,17 +115,18 @@ td
 aside
 {
 	background-color: #4DB6AC;
-	width: 350px;
+	max-width: 480px;
 }
-
-#trombi, #loisirs /*définition de la position du liseré*/
+/*centrage de ces blocs, ça ne fonctionne pas
+ */
+aside header, footer 
 {
-	margin-left: auto;
-	margin-right: auto;
-	width: 15em;
+	margin : auto;
+	text-align: center;
 }
 
-#trombi img /*bordure et centrage de la photo*/
+
+aside header img /*bordure et centrage de la photo*/
 {
 	border: 4px #00695C solid;
 	border-radius: 90px;
@@ -132,7 +134,8 @@ aside
 }
 
 /* Je le mets en commentaires parce que ça ne fonctionne pas 
-#hobbies
+Je voudrais positionner ce bloc en bas de page quand il y a de la place
+footer
 {
 	position: static;
 	bottom: 0;
@@ -148,7 +151,7 @@ aside
 }
 
 /* ///////////////// Le bloc cv ////////////////// */
-header
+#cv header
 {
 	justify-content: space-around;
 	text-align: left;
@@ -200,8 +203,52 @@ td /*alignement des cellules en haut*/
 	}
 }
 
-@media all and (max-device-width: 480px)
+@media all and (max-device-width: 480px) /* règles CSS pour les mobiles  */
 {
-    /* Mes règles CSS pour les mobiles ici */
+	#conteneur
+	{
+		display: inline-block;
+	}
+
+	aside header, #moi, footer
+	{
+		display: none;
+	}
+
+	#aside
+	{
+		display: flex;
+		width: auto;
+	}   
+
+	#contact p
+	{
+		display: inline-block;
+		font-size: 0.8em;
+	}	
 }
 
+@media all and (max-width: 480px) /* règles CSS pour les petites fenêtres  */
+{
+	#conteneur
+	{
+		display: inline-block;
+	}
+
+	aside header, #moi, footer
+	{
+		display: none;
+	}
+
+	#aside
+	{
+		display: flex;
+		width: auto;
+	}   
+
+	#contact p
+	{
+		display: inline-block;
+		font-size: 0.8em;
+	}	
+}
