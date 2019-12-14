@@ -52,7 +52,7 @@ header hr /*petite ligne sous Développeuse*/
 	padding-top: 0px;
 }
 
-section i /*retrait des icones*/
+#cv i /*retrait des icones*/
 {
 	padding-right: 10px;
 }
@@ -65,6 +65,7 @@ padding-bottom: 0px; /* pas d'effet */
 
 h2
 {
+	text-transform: uppercase;
 	color: teal;
 	font-family: 'acmeregular';
 	text-align: left;
@@ -78,7 +79,7 @@ hr /*grandes lignes sous les h2*/
 	padding-top: 0px;
 }
 
-li /*liste avec puces*/
+#mes_competences li /*liste avec puces*/
 {
 	list-style-type: none;
 	background-image: url(images/puce.png);
@@ -105,6 +106,11 @@ td
 	padding-left: 10px;
 }
 
+footer li
+{
+	list-style-type: none;
+}
+
 /* //////////// ORGANISATION  DES DIFFERENTS BLOCS /////////// */
 
 /* /////////////////////////  Le liseré /////////////////////// */
@@ -117,14 +123,12 @@ aside
 	background-color: #4DB6AC;
 	max-width: 480px;
 }
-/*centrage de ces blocs, ça ne fonctionne pas
- */
-aside header, footer 
+
+aside header, footer /*centrage de ces blocs */
 {
 	margin : auto;
 	text-align: center;
 }
-
 
 aside header img /*bordure et centrage de la photo*/
 {
@@ -165,7 +169,7 @@ section
 	justify-content: space-around;
 }
 
-#mes_competences
+#mes_competences, #ma_formation
 {
 	min-width: 300px;
 }
@@ -175,12 +179,22 @@ td /*alignement des cellules en haut*/
 	vertical-align: top;
 }
 
-.td_exp /* largeur d'un colonne*/
+.td_exp /* largeur d'une colonne*/
 {
 	min-width: 120px;
 }
 
+#references /*placer les deux listes en ligne sur toute la largeur*/
+{
+	display: flex;
+	justify-content: flex-start;
+}
 
+footer ul 
+{
+	text-align: left;
+	margin-right: 150px;
+}
 
 /* ////////// Style page adapté aux différents formats /////////// */
 @media all and (max-width: 1024px)
@@ -201,9 +215,20 @@ td /*alignement des cellules en haut*/
 		width: auto;
 		flex-direction: column;
 	}
+
+	#references
+	{
+		flex-direction: column;
+	}
+
+	footer ul 
+	{
+		text-align: left;
+		margin-right: auto;
+	}
 }
 
-@media all and (max-device-width: 480px) /* règles CSS pour les mobiles  */
+@media all and (max-device-width: 480px) /* règles CSS pour les mobiles COMMENT VERIFIER CE FORMAT ???? */
 {
 	#conteneur
 	{
