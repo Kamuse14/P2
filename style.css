@@ -35,8 +35,8 @@ p
 
 aside p
 {
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
 }
 
 header strong /*écrire uniquement "Karine" en teal*/
@@ -121,7 +121,7 @@ footer li
 aside
 {
 	background-color: #4DB6AC;
-	max-width: 480px;
+	max-width: 280px;
 }
 
 aside header, footer /*centrage de ces blocs */
@@ -216,15 +216,17 @@ footer ul
 		flex-direction: column;
 	}
 
-	#recommandations
+	#mon_experience em
 	{
-		flex-direction: column;
+		display: none;
 	}
-
+	
+		
 	footer ul 
 	{
 		text-align: left;
 		margin-right: auto;
+		font-size: 0.9em;
 	}
 }
 
@@ -235,7 +237,7 @@ footer ul
 		display: inline-block;
 	}
 
-	aside header, #moi, footer
+	aside header, #moi
 	{
 		display: none;
 	}
@@ -251,6 +253,11 @@ footer ul
 		display: inline-block;
 		font-size: 0.8em;
 	}	
+
+	#recommandations
+	{
+		flex-direction: column;
+	}
 }
 
 @media all and (max-width: 480px) /* règles CSS pour les petites fenêtres  */
@@ -260,20 +267,20 @@ footer ul
 		display: inline-block;
 	}
 
-	aside header, #moi, footer
+	aside header, #moi
 	{
 		display: none;
 	}
-
-	#aside
-	{
-		display: flex;
-		width: auto;
-	}   
-
+	
 	#contact p
 	{
 		display: inline-block;
 		font-size: 0.8em;
 	}	
+
+	#recommandations
+	{
+		flex-direction: column;
+	}
+
 }
