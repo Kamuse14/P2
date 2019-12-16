@@ -169,7 +169,7 @@ section
 	justify-content: space-around;
 }
 
-#mes_competences, #ma_formation
+#mes_competences, #mon_experience, #ma_formation
 {
 	min-width: 300px;
 }
@@ -184,7 +184,7 @@ td /*alignement des cellules en haut*/
 	min-width: 120px;
 }
 
-#references /*placer les deux listes en ligne sur toute la largeur*/
+#recommandations /*placer les deux listes en ligne sur toute la largeur*/
 {
 	display: flex;
 	justify-content: flex-start;
@@ -216,7 +216,7 @@ footer ul
 		flex-direction: column;
 	}
 
-	#references
+	#recommandations
 	{
 		flex-direction: column;
 	}
