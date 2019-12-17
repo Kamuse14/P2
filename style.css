@@ -1,17 +1,5 @@
 /* /////////////////////////// polices //////////////////////*/ 
 @font-face {
-    font-family: 'acmeregular';
-    src: url('polices/acme_regular_macroman/Acme-Regular-webfont.eot');
-    src: url('polices/acme_regular_macroman/Acme-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('polices/acme_regular_macroman/Acme-Regular-webfont.woff2') format('woff2'),
-         url('polices/acme_regular_macroman/Acme-Regular-webfont.woff') format('woff'),
-         url('polices/acme_regular_macroman/Acme-Regular-webfont.ttf') format('truetype'),
-         url('polices/acme_regular_macroman/Acme-Regular-webfont.svg#acmeregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
 	font-family: "abel";
 	src: url("polices/abel/abel-regular-webfont.eot");
 	src: url('polices/abel/abel-regular-webfont.woff2') format('woff2'),
@@ -59,15 +47,13 @@ header hr /*petite ligne sous Développeuse*/
 
 h1
 {
-margin-bottom: 0px; /* ne suffit pas à réduire l'interligne */
-padding-bottom: 0px; /* pas d'effet */
+	margin-bottom: -20px; 
 }
 
 h2
 {
 	text-transform: uppercase;
 	color: teal;
-	font-family: 'acmeregular';
 	text-align: left;
 	margin:20px 20px 0px 30px;
 }
@@ -79,13 +65,14 @@ hr /*grandes lignes sous les h2*/
 	padding-top: 0px;
 }
 
-#mes_competences li /*liste avec puces*/
+section ul
+{
+	margin-top: 0px;
+}
+section li /*liste sans puce*/
 {
 	list-style-type: none;
-	background-image: url(images/puce.png);
-	background-repeat: no-repeat;
-	background-position: 0 0.1em;
-	padding-left: 25px;
+	margin-left: -40px;
 }
 
 h3
@@ -169,7 +156,7 @@ section
 	justify-content: space-around;
 }
 
-#mes_competences, #mon_experience, #ma_formation
+#experience, #formation
 {
 	min-width: 300px;
 }
@@ -216,7 +203,7 @@ footer ul
 		flex-direction: column;
 	}
 
-	#mon_experience em
+	#experience em
 	{
 		display: none;
 	}
@@ -267,7 +254,7 @@ footer ul
 		display: inline-block;
 	}
 
-	aside header, #moi
+	aside header, #moi, aside footer
 	{
 		display: none;
 	}
