@@ -16,9 +16,16 @@
 }
 
 /* /////////////Styles des paragraphes, titres et listes ///////// */
+:root 
+{
+	--main-bg-color: #FFC107;
+	--main-md-color: #424242;
+}
+
 p
 {
 	text-align: justify;
+	color: var(--main-md-color);
 }
 
 aside p
@@ -27,15 +34,20 @@ aside p
 	margin-right: 30px;
 }
 
-header strong /*écrire uniquement "Karine" en teal*/
+#contact a
 {
-	color: teal;
+	color: var(--main-md-color);
+}
+
+header strong /*écrire uniquement "Karine" en amber*/
+{
+	color: var(--main-bg-color);
 }
 
 header hr /*petite ligne sous Développeuse*/
 {
 	width: 35px;
-	color:  #00695C;
+	color: var(--main-bg-color);
 	margin: 0px 5px 10px 0px;
 	padding-top: 0px;
 }
@@ -45,24 +57,50 @@ header hr /*petite ligne sous Développeuse*/
 	padding-right: 10px;
 }
 
+
+/*h1, h2, h3    Je cherche à grossir les caractères, ça ne fonctionne pas
+{
+	font-weight: bolder;
+}*/
+
 h1
 {
 	margin-bottom: -20px; 
 }
 
+h2 i
+{
+	color: var(--main-bg-color);
+}
+
 h2
 {
 	text-transform: uppercase;
-	color: teal;
 	text-align: left;
 	margin:20px 20px 0px 30px;
 }
 
 hr /*grandes lignes sous les h2*/
 {
-	color: #00695C;
+	color: var(--main-bg-color);
 	margin: 0px 5px 10px 20px;
 	padding-top: 0px;
+}
+
+table i /*position et couleur des puces*/
+{
+	margin: 15px 0px 20px 10px;
+	color: var(--main-bg-color);
+}
+
+table .fas.fa-circle /* Réduction de la taille des puces*/
+{
+	font-size: 0.6em;
+}
+
+table, #recommandations ul
+{
+	color: var(--main-md-color);
 }
 
 section ul
@@ -79,8 +117,9 @@ h3
 {
 	text-transform: uppercase;
 	text-align: center;
-	background-color: rgb(55,55,55);
-	color: #4DB6AC;
+	background-color: var(--main-md-color);
+	color: var(--main-bg-color);
+	padding: 5px;
 }
 
 h4
@@ -107,7 +146,7 @@ footer li
 }
 aside
 {
-	background-color: #4DB6AC;
+	background-color: var(--main-bg-color);
 	max-width: 280px;
 }
 
@@ -119,7 +158,7 @@ aside header, footer /*centrage de ces blocs */
 
 aside header img /*bordure et centrage de la photo*/
 {
-	border: 4px #00695C solid;
+	border: 4px #FFA000 solid;
 	border-radius: 90px;
 	margin : 1em 2em 1em 2em;
 }
@@ -128,13 +167,14 @@ aside header img /*bordure et centrage de la photo*/
 Je voudrais positionner ce bloc en bas de page quand il y a de la place
 footer
 {
-	position: static;
+	position: fixe;
 	bottom: 0;
 } */
 
 #loisirs i /*bordures et positionnement des icones*/
 {
-	border: 3px #00695C solid;
+	color: var(--main-md-color);
+	border: 3px var(--main-md-color) solid;
 	border-radius: 50px;
 	padding : 0.2em 0.2em 0.2em 0.2em;
 	margin: 0.2em 0.2em 0.2em 0.2em;
@@ -254,7 +294,7 @@ footer ul
 		display: inline-block;
 	}
 
-	aside header, #moi, aside footer
+	#moi, aside footer
 	{
 		display: none;
 	}
@@ -263,6 +303,7 @@ footer ul
 	{
 		display: inline-block;
 		font-size: 0.8em;
+		margin: 5px 5px 5px 25px;
 	}	
 
 	#recommandations
