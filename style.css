@@ -95,7 +95,7 @@ table i /*position et couleur des puces*/
 
 table .fas.fa-circle /* Réduction de la taille des puces*/
 {
-	font-size: 0.6em;
+	font-size: 0.5em;
 }
 
 table, #recommandations ul
@@ -124,6 +124,7 @@ h3
 
 h4
 {
+	text-transform: uppercase;
 	margin: 10px 0px 0px 0px;
 }
 
@@ -206,10 +207,20 @@ td /*alignement des cellules en haut*/
 	vertical-align: top;
 }
 
-.td_exp /* largeur d'une colonne*/
+.td_form, .td_exp /* largeur deuxième colonne*/
 {
 	min-width: 120px;
 }
+
+h5
+{
+
+}
+
+table h5  
+{
+	margin: 10px 0px 10px -10px;
+} 
 
 #recommandations /*placer les deux listes en ligne sur toute la largeur*/
 {
