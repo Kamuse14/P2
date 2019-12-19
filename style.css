@@ -1,4 +1,4 @@
-/* /////////////////////////// polices //////////////////////*/ 
+/* //////////////////////////1/ POLICE //////////////////////*/ 
 @font-face {
 	font-family: "abel";
 	src: url("polices/abel/abel-regular-webfont.eot");
@@ -15,17 +15,16 @@
 	font-family: "abel", Impact, sans-serif;
 }
 
-/* /////////////Styles des paragraphes, titres et listes ///////// */
-:root 
+/* ////////////2/ STYLES des paragraphes, titres et listes ///////// */
+:root /* Définition des couleurs principales */
 {
 	--main-bg-color: #FFC107;
 	--main-md-color: #424242;
 }
 
-p
+p, table li /* paragraphes "à propos" et cv justifiés*/
 {
 	text-align: justify;
-	color: var(--main-md-color);
 }
 
 aside p
@@ -34,17 +33,17 @@ aside p
 	margin-right: 30px;
 }
 
-#contact a
+#contact a, p, table, #recommandations ul
 {
 	color: var(--main-md-color);
 }
 
-header strong /*écrire uniquement "Karine" en amber*/
+header strong/*écrire uniquement "Karine" en amber*/, h2 i
 {
 	color: var(--main-bg-color);
 }
 
-header hr /*petite ligne sous Développeuse*/
+header hr /*petite ligne sous "Développeuse"*/
 {
 	width: 35px;
 	color: var(--main-bg-color);
@@ -57,23 +56,12 @@ header hr /*petite ligne sous Développeuse*/
 	padding-right: 10px;
 }
 
-
-/*h1, h2, h3    Je cherche à grossir les caractères, ça ne fonctionne pas
-{
-	font-weight: bolder;
-}*/
-
-h1
+h1 /*KARINE GRASSI*/
 {
 	margin-bottom: -20px; 
 }
 
-h2 i
-{
-	color: var(--main-bg-color);
-}
-
-h2
+h2 /* formation, expérience et recommandations */
 {
 	text-transform: uppercase;
 	text-align: left;
@@ -89,31 +77,22 @@ hr /*grandes lignes sous les h2*/
 
 table i /*position et couleur des puces*/
 {
-	margin: 15px 0px 20px 10px;
+	margin: 15px 5px 20px 10px;
 	color: var(--main-bg-color);
 }
 
-table .fas.fa-circle /* Réduction de la taille des puces*/
+table .fas.fa-circle /* Réduction de la taille des puces (petits disques)*/
 {
 	font-size: 0.5em;
 }
 
-table, #recommandations ul
-{
-	color: var(--main-md-color);
-}
-
-section ul
-{
-	margin-top: 0px;
-}
 section li /*liste sans puce*/
 {
 	list-style-type: none;
 	margin-left: -40px;
 }
 
-h3
+h3 /* contact, à propose de moi et loisirs */
 {
 	text-transform: uppercase;
 	text-align: center;
@@ -122,16 +101,16 @@ h3
 	padding: 5px;
 }
 
-h4
+h4 /*BTS, formatrice, professeure ...*/
 {
 	text-transform: uppercase;
 	margin: 10px 0px 0px 0px;
 }
 
-td
+table h5  
 {
-	padding-left: 10px;
-}
+	margin: 10px 0px 10px -10px;
+} 
 
 footer li
 {
@@ -140,7 +119,7 @@ footer li
 
 /* //////////// ORGANISATION  DES DIFFERENTS BLOCS /////////// */
 
-/* /////////////////////////  Le liseré /////////////////////// */
+/* /////////////////////////  LE LISERE /////////////////////// */
 #conteneur
 {
 	display: flex;
@@ -182,7 +161,7 @@ footer
 	font-size: 2.5em;
 }
 
-/* ///////////////// Le bloc cv ////////////////// */
+/* //////////////////// LE BLOC CV //////////////////// */
 #cv header
 {
 	justify-content: space-around;
@@ -191,36 +170,33 @@ footer
 	margin: 20px;
 }
 
-section
+section /* La section passe à droite du aside et non en dessous */
 {
 	display: flex;
 	justify-content: space-around;
 }
 
-#experience, #formation
-{
-	min-width: 300px;
-}
 
-td /*alignement des cellules en haut*/
+td /*alignement des cellules en haut */
 {
 	vertical-align: top;
 }
 
-.td_form, .td_exp /* largeur deuxième colonne*/
+td i                 /*marge intérieur 1ère colonne*/
+{
+	padding-left: 15px;
+}
+
+.td_form, .td_exp       /* largeur min 2ème colonne*/
 {
 	min-width: 120px;
 }
 
-h5
+#experience, #formation /* largeur min 3ème colonne */
 {
-
+	min-width: 300px;
+	padding-right: 10px;
 }
-
-table h5  
-{
-	margin: 10px 0px 10px -10px;
-} 
 
 #recommandations /*placer les deux listes en ligne sur toute la largeur*/
 {
@@ -234,12 +210,12 @@ footer ul
 	margin-right: 150px;
 }
 
-/* ////////// Style page adapté aux différents formats /////////// */
-@media all and (max-width: 1024px)
+/* ///////////// STYLE ADAPTE AUX DIFFERENTS FORMATS ///////////// */
+@media all and (max-width: 1024px) /* format tablette portrait */
 {
 	body
 	{
-		width: 70%;
+		width: 75%;
 		margin: auto;
 	}
 
@@ -248,7 +224,7 @@ footer ul
 		margin-top: 10px;
 	}
 
-	section
+	section /* "expérience se décale sous formation" */ 
 	{
 		width: auto;
 		flex-direction: column;
@@ -258,11 +234,9 @@ footer ul
 	{
 		display: none;
 	}
-	
-		
+			
 	footer ul 
 	{
-		text-align: left;
 		margin-right: auto;
 		font-size: 0.9em;
 	}
@@ -270,54 +244,29 @@ footer ul
 
 @media all and (max-device-width: 480px) /* règles CSS pour les mobiles COMMENT VERIFIER CE FORMAT ???? */
 {
-	#conteneur
-	{
-		display: inline-block;
-	}
-
-	aside header, #moi
-	{
-		display: none;
-	}
-
-	#aside
-	{
-		display: flex;
-		width: auto;
-	}   
-
-	#contact p
-	{
-		display: inline-block;
-		font-size: 0.8em;
-	}	
-
-	#recommandations
-	{
-		flex-direction: column;
-	}
+	
 }
 
 @media all and (max-width: 480px) /* règles CSS pour les petites fenêtres  */
 {
-	#conteneur
+	#conteneur /* les 2 gros blocs se positionnent l'un en dessous de l'autre */
 	{
 		display: inline-block;
 	}
 
-	#moi, aside footer
+	#moi, aside footer /* en petit format : suppressein du "à propos" et des loisirs */
 	{
 		display: none;
 	}
 	
-	#contact p
+	#contact p /* les 4 blocs se positionnent sur 2 lignes */
 	{
 		display: inline-block;
 		font-size: 0.8em;
 		margin: 5px 5px 5px 25px;
 	}	
 
-	#recommandations
+	#recommandations /* les 2 références se positionnent l'une en dessous de l'autre */
 	{
 		flex-direction: column;
 	}
