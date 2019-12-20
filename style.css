@@ -70,6 +70,9 @@ h2 /* formation, expérience et recommandations */
 
 hr /*grandes lignes sous les h2*/
 {
+	height: 1.4px;
+	border: var(--main-bg-color);
+	background-color: var(--main-bg-color);
 	color: var(--main-bg-color);
 	margin: 0px 5px 10px 20px;
 	padding-top: 0px;
@@ -119,20 +122,33 @@ footer li
 
 /* //////////// ORGANISATION  DES DIFFERENTS BLOCS /////////// */
 
+<<<<<<< HEAD
 /* /////////////////////////  LE LISERE /////////////////////// */
+=======
+/* /////////////////////////  Le liseré /////////////////////// */
+
+body
+{
+	width: 75%;
+	margin: auto;
+}
+
+>>>>>>> hobbies2
 #conteneur
 {
 	display: flex;
 }
 aside
 {
+	/*position: absolute;
+	min-height: 1100px;*/
 	background-color: var(--main-bg-color);
 	max-width: 280px;
 }
 
 aside header, footer /*centrage de ces blocs */
 {
-	margin : auto;
+	margin: auto;
 	text-align: center;
 }
 
@@ -140,15 +156,15 @@ aside header img /*bordure et centrage de la photo*/
 {
 	border: 4px #FFA000 solid;
 	border-radius: 90px;
-	margin : 1em 2em 1em 2em;
+	margin: 1em 2em 1em 2em;
 }
 
 /* Je le mets en commentaires parce que ça ne fonctionne pas 
 Je voudrais positionner ce bloc en bas de page quand il y a de la place
-footer
+aside footer
 {
-	position: fixe;
-	bottom: 0;
+	position: fixed;
+	bottom:0; 
 } */
 
 #loisirs i /*bordures et positionnement des icones*/
@@ -156,7 +172,7 @@ footer
 	color: var(--main-md-color);
 	border: 3px var(--main-md-color) solid;
 	border-radius: 50px;
-	padding : 0.2em 0.2em 0.2em 0.2em;
+	padding: 0.2em 0.2em 0.2em 0.2em;
 	margin: 0.2em 0.2em 0.2em 0.2em;
 	font-size: 2.5em;
 }
@@ -215,7 +231,11 @@ footer ul
 {
 	body
 	{
+<<<<<<< HEAD
 		width: 75%;
+=======
+		width: auto;
+>>>>>>> hobbies2
 		margin: auto;
 	}
 
@@ -249,7 +269,16 @@ footer ul
 
 @media all and (max-width: 480px) /* règles CSS pour les petites fenêtres  */
 {
+<<<<<<< HEAD
 	#conteneur /* les 2 gros blocs se positionnent l'un en dessous de l'autre */
+=======
+	body
+	{
+		margin: none;
+	}
+
+	#conteneur
+>>>>>>> hobbies2
 	{
 		display: inline-block;
 	}
