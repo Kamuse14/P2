@@ -51,7 +51,7 @@ header hr /*petite ligne sous "Développeuse"*/
 	padding-top: 0px;
 }
 
-#cv i /*retrait des icones*/
+main i /*retrait des icones*/
 {
 	padding-right: 10px;
 }
@@ -120,7 +120,7 @@ footer li
 	list-style-type: none;
 }
 
-/* //////////// ORGANISATION  DES DIFFERENTS BLOCS /////////// */
+/* ///////////3/ ORGANISATION  DES DIFFERENTS BLOCS /////////// */
 
 /* /////////////////////////  LE LISERE /////////////////////// */
 
@@ -173,12 +173,12 @@ aside footer
 	font-size: 2.5em;
 }
 
-/* //////////////////// LE BLOC CV //////////////////// */
-#cv header
+/* //////////////////// LE BLOC MAIN //////////////////// */
+main header
 {
 	justify-content: space-around;
 	text-align: left;
-	padding-right: 10px;
+	
 	margin: 20px;
 }
 
@@ -186,6 +186,7 @@ section /* La section passe à droite du aside et non en dessous */
 {
 	display: flex;
 	justify-content: space-around;
+	margin-right: 20px;
 }
 
 
@@ -222,9 +223,17 @@ footer ul
 	margin-right: 150px;
 }
 
-/* ///////////// STYLE ADAPTE AUX DIFFERENTS FORMATS ///////////// */
+/* ////////////4/ STYLE ADAPTE AUX DIFFERENTS FORMATS ///////////// */
 @media all and (max-width: 1024px) /* format tablette portrait */
 {
+<<<<<<< HEAD
+=======
+	body
+	{
+		width: auto;
+	}
+
+>>>>>>> semantic
 	header
 	{
 		margin-top: 10px;
@@ -257,7 +266,7 @@ footer ul
 {
 	body
 	{
-		margin: none;
+		margin: auto;
 	}
 
 	#conteneur /* les 2 gros blocs se positionnent l'un en dessous de l'autre */
@@ -265,20 +274,33 @@ footer ul
 		display: inline-block;
 	}
 
+<<<<<<< HEAD
 	aside, #cv
 	{
 		max-width: 100%
 	}
 
 	#moi, aside footer /* en petit format : suppressein du "à propos" et des loisirs */
+=======
+	aside, main
+	{
+		max-width: 100%;
+	}
+
+	#moi, aside footer /* en petit format : suppression du "à propos" et des loisirs */
+>>>>>>> semantic
 	{
 		display: none;
 	}
 	
+	#contact
+	{
+		padding-bottom: 10px;
+	}
+
 	#contact p /* les 4 blocs se positionnent sur 2 lignes */
 	{
 		display: inline-block;
-		font-size: 0.8em;
 		margin: 5px 5px 5px 25px;
 	}	
 
