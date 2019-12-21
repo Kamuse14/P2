@@ -122,10 +122,7 @@ footer li
 
 /* //////////// ORGANISATION  DES DIFFERENTS BLOCS /////////// */
 
-<<<<<<< HEAD
 /* /////////////////////////  LE LISERE /////////////////////// */
-=======
-/* /////////////////////////  Le liseré /////////////////////// */
 
 body
 {
@@ -133,7 +130,6 @@ body
 	margin: auto;
 }
 
->>>>>>> hobbies2
 #conteneur
 {
 	display: flex;
@@ -229,16 +225,6 @@ footer ul
 /* ///////////// STYLE ADAPTE AUX DIFFERENTS FORMATS ///////////// */
 @media all and (max-width: 1024px) /* format tablette portrait */
 {
-	body
-	{
-<<<<<<< HEAD
-		width: 75%;
-=======
-		width: auto;
->>>>>>> hobbies2
-		margin: auto;
-	}
-
 	header
 	{
 		margin-top: 10px;
@@ -269,18 +255,19 @@ footer ul
 
 @media all and (max-width: 480px) /* règles CSS pour les petites fenêtres  */
 {
-<<<<<<< HEAD
-	#conteneur /* les 2 gros blocs se positionnent l'un en dessous de l'autre */
-=======
 	body
 	{
 		margin: none;
 	}
 
-	#conteneur
->>>>>>> hobbies2
+	#conteneur /* les 2 gros blocs se positionnent l'un en dessous de l'autre */
 	{
 		display: inline-block;
+	}
+
+	aside, #cv
+	{
+		max-width: 100%
 	}
 
 	#moi, aside footer /* en petit format : suppressein du "à propos" et des loisirs */
