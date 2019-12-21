@@ -226,14 +226,11 @@ footer ul
 /* ////////////4/ STYLE ADAPTE AUX DIFFERENTS FORMATS ///////////// */
 @media all and (max-width: 1024px) /* format tablette portrait */
 {
-<<<<<<< HEAD
-=======
 	body
 	{
 		width: auto;
 	}
 
->>>>>>> semantic
 	header
 	{
 		margin-top: 10px;
@@ -274,21 +271,12 @@ footer ul
 		display: inline-block;
 	}
 
-<<<<<<< HEAD
-	aside, #cv
-	{
-		max-width: 100%
-	}
-
-	#moi, aside footer /* en petit format : suppressein du "à propos" et des loisirs */
-=======
 	aside, main
 	{
 		max-width: 100%;
 	}
 
 	#moi, aside footer /* en petit format : suppression du "à propos" et des loisirs */
->>>>>>> semantic
 	{
 		display: none;
 	}
@@ -301,7 +289,8 @@ footer ul
 	#contact p /* les 4 blocs se positionnent sur 2 lignes */
 	{
 		display: inline-block;
-		margin: 5px 5px 5px 25px;
+		margin: 5px 5px 5px 30px;
+		font-size: 1.1em;
 	}	
 
 	#recommandations /* les 2 références se positionnent l'une en dessous de l'autre */
