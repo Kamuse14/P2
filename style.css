@@ -183,7 +183,6 @@ aside
 
 aside header, footer /*centrage de ces blocs */
 {
-	margin: auto;
 	text-align: center;
 }
 
@@ -191,7 +190,7 @@ aside header img /*bordure et centrage de la photo*/
 {
 	border: 4px #FFA000 solid;
 	border-radius: 90px;
-	margin: 1em 2em 1em 2em;
+	margin: 2em 2em 1em 2em;
 }
 
 /* Je le mets en commentaires parce que ça ne fonctionne pas 
