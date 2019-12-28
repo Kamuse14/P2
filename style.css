@@ -130,10 +130,11 @@ aside footer
 autre idée mais ça ne fonctionne pas : aside flex direction column et 
 align-self pour footer mais marche pas*/
 
-#contactx
+address
 {
 	display: flex;
 	flex-wrap: wrap;
+	font-style: normal;
 }
 
 .element
