@@ -60,7 +60,7 @@ main header {
 
 /* ////////////3/ STYLES Généraux des paragraphes, titres et listes ///////// */
 
-p, table li /* paragraphes "à propos" et cv justifiés*/
+p, .table li /* paragraphes "à propos" et cv justifiés*/
 {
 	text-align: justify;
 }
@@ -71,7 +71,7 @@ aside p
 	margin-right: 2rem;
 }
 
-#contact a, p, table, #recommandations ul
+#contact a, p, .table, #recommandations ul
 {
 	color: var(--main-md-color);
 }
@@ -126,7 +126,9 @@ aside footer
 {
 	position: fixed;
 	bottom:0; 
-} */
+} 
+autre idée mais ça ne fonctionne pas : aside flex direction column et 
+align-self pour footer mais marche pas*/
 
 #contactx
 {
@@ -214,25 +216,35 @@ hr /*grandes lignes sous les h2*/
 	padding-right: 2rem;
 }
 
-td /*alignement des cellules en haut */
+.ligne
 {
-	vertical-align: top;
+	display: flex;
 }
 
-table i /*1ère colonne : position et couleur des puces*/
+.table i
+{
+	min-width: 20px;
+}
+
+.col2
+{
+	min-width: 120px;
+}
+
+.col3
+{
+	min-width: 200px;
+}
+
+.table i /*1ère colonne : position et couleur des puces*/
 {
 	margin: 1.6rem 0.1rem 2rem 2rem;
 	color: var(--main-bg-color);
 }
 
-table .fas.fa-circle /* Réduction de la taille des puces (petits disques)*/
+.table .fas.fa-circle /* Réduction de la taille des puces (petits disques)*/
 {
 	font-size: 0.5em;
-}
-
-.td_form, .td_exp       /* 2ème colonne : dates et lieux */
-{
-	min-width: 120px;
 }
 
 h4 /*titres 3ème colonne  : BTS, formatrice, professeure ... */
