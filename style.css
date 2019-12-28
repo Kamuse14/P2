@@ -93,8 +93,8 @@ body
 
 aside
 {
-	/*position: absolute;
-	min-height: 1100px;*/
+	/*display: flex;
+	flex-direction: column;*/
 	background-color: var(--main-bg-color);
 	max-width: 280px;
 }
@@ -111,7 +111,7 @@ aside header img /*bordure et centrage de la photo*/
 	margin: 2rem 2rem 1rem 2rem;
 }
 
-h3 /* contact, à propose de moi et loisirs */
+h3 /* contact, à propos de moi et loisirs */
 {
 	text-transform: uppercase;
 	text-align: center;
@@ -127,6 +127,17 @@ aside footer
 	position: fixed;
 	bottom:0; 
 } */
+
+#contactx
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.element
+{
+	min-width: 10em;
+}
 
 #loisirs i /*bordures et positionnement des icones*/
 {
@@ -192,7 +203,7 @@ hr /*grandes lignes sous les h2*/
 	border: var(--main-bg-color);
 	background-color: var(--main-bg-color);
 	color: var(--main-bg-color);
-	margin: 0rem 2rem 1.5rem 2rem;
+	margin: 0rem 2rem 0.5rem 2rem;
 }
 
 /* //////////// les "tableaux" //////////////*/
@@ -210,7 +221,7 @@ td /*alignement des cellules en haut */
 
 table i /*1ère colonne : position et couleur des puces*/
 {
-	margin: 0rem 0.1rem 2rem 2rem;
+	margin: 1.6rem 0.1rem 2rem 2rem;
 	color: var(--main-bg-color);
 }
 
@@ -222,18 +233,12 @@ table .fas.fa-circle /* Réduction de la taille des puces (petits disques)*/
 .td_form, .td_exp       /* 2ème colonne : dates et lieux */
 {
 	min-width: 120px;
-	/*padding-top: -10rem; A REVOIR !!!!!*/
 }
-
-/*h5 MARCHE PAS
-{
-	padding-top: -10rem;
-}*/
 
 h4 /*titres 3ème colonne  : BTS, formatrice, professeure ... */
 {
 	text-transform: uppercase;
-	margin: 0rem 0rem -0.7rem 0rem;
+	margin: 1.3rem 0rem -0.7rem 0rem;
 }
 
 section li /*listes sans puce sous h4*/
