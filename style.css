@@ -143,6 +143,11 @@ address
 	margin: -0.5rem 0rem -0.5rem 0rem;
 }
 
+.element a
+{
+	text-decoration: none;
+}
+
 #loisirs i /*bordures et positionnement des icones*/
 {
 	color: var(--main-md-color);
