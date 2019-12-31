@@ -60,7 +60,7 @@ main header {
 
 /* ////////////3/ STYLES Généraux des paragraphes, titres et listes ///////// */
 
-p, .table li /* paragraphes "à propos" et cv justifiés*/
+p, .grille li /* paragraphes "à propos" et cv justifiés*/
 {
 	text-align: justify;
 }
@@ -71,7 +71,7 @@ aside p
 	margin-right: 2rem;
 }
 
-#contact a, p, .table, #recommandations ul
+#contact a, p, .grille, #recommandations ul
 {
 	color: var(--main-md-color);
 }
@@ -96,6 +96,7 @@ aside
 	/*display: flex;
 	flex-direction: column;*/
 	background-color: var(--main-bg-color);
+	min-width: 270px;
 	max-width: 280px;
 }
 
@@ -184,10 +185,9 @@ header hr /*petite ligne sous "Développeuse"*/
 	width: 2.5rem;
 	color: var(--main-bg-color);
 	margin: 0rem 5rem 1.2rem 0rem;
-	
 }
 
-/* //////////// 4-2-2/ La grande section : form +exp ////////// */ 
+/* //////////// 4-2-2/ La grande section : form + exp ////////// */ 
 section /* Formation et expérience sont l'un à côté de l'autre en format PC */
 {
 	display: flex;
@@ -216,40 +216,25 @@ hr /*grandes lignes sous les h2*/
 }
 
 /* //////////// les "tableaux" //////////////*/
-
-#experience, #formation /* */
+.grille 
 {
-	min-width: 300px;
-	padding-right: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 140px 30fr;
+	margin: 0rem 1rem 0rem 1.5rem;
 }
 
-.ligne
+.grille >div
 {
-	display: flex;
+	padding-left: 0.5rem;
 }
 
-.table i
+.grille i /*1ère colonne : position et couleur des puces*/
 {
-	min-width: 20px;
-}
-
-.col2
-{
-	min-width: 120px;
-}
-
-.col3
-{
-	min-width: 200px;
-}
-
-.table i /*1ère colonne : position et couleur des puces*/
-{
-	margin: 1.6rem 0.1rem 2rem 2rem;
+	padding-top: 1.6rem;
 	color: var(--main-bg-color);
 }
 
-.table .fas.fa-circle /* Réduction de la taille des puces (petits disques)*/
+.grille .fas.fa-circle /* Réduction de la taille des puces (petits disques)*/
 {
 	font-size: 0.5em;
 }
@@ -340,6 +325,12 @@ footer ul /*liste dans recommandations */
 		margin-top: -0.5rem;
 	}
 	
+	.grille 
+	{
+		grid-template-columns: 30px 1fr 2fr;
+		margin: 0rem 1rem 0rem 1rem;
+	}
+
 	#recommandations /* les 2 références se positionnent l'une en dessous de l'autre */
 	{
 		flex-direction: column;
