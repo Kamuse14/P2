@@ -121,16 +121,6 @@ h3 /* contact, à propos de moi et loisirs */
 	padding: 0.3rem;
 }
 
-/* Je le mets en commentaires parce que ça ne fonctionne pas 
-Je voudrais positionner ce bloc en bas de page quand il y a de la place
-aside footer
-{
-	position: fixed;
-	bottom:0; 
-} 
-autre idée mais ça ne fonctionne pas : aside flex direction column et 
-align-self pour footer mais marche pas*/
-
 address
 {
 	display: flex;
@@ -260,6 +250,7 @@ section li /*listes sans puce sous h4*/
 
 footer ul /*liste dans recommandations */
 {
+	width: 50%;
 	text-align: left;
 	margin-right: 15rem;
 	list-style-type: none;
@@ -294,11 +285,6 @@ footer ul /*liste dans recommandations */
 
 @media all and (max-device-width: 480px) /* 5-2/ règles CSS pour les mobiles COMMENT VERIFIER CE FORMAT ???? */
 {
-	body
-	{
-		margin: auto;
-	}
-
 	#conteneur /* les 2 gros blocs se positionnent l'un en dessous de l'autre */
 	{
 		display: inline-block;
