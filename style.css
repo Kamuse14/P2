@@ -18,7 +18,7 @@ body
 :root /* Définition des couleurs principales */
 {
 	--main-bg-color: #FFC107;
-	--main-md-color: #424242;
+	--main-color: #424242;
 }
 
 /* ////////////2/ ANIMATIONS ///////// */
@@ -73,7 +73,7 @@ aside p
 
 #contact a, p, .grille, #recommandations ul
 {
-	color: var(--main-md-color);
+	color: var(--main-color);
 }
 
 /* ///////////4/ ORGANISATION  et STYLES des différents blocs /////////// */
@@ -93,8 +93,6 @@ body
 
 aside
 {
-	/*display: flex;
-	flex-direction: column;*/
 	background-color: var(--main-bg-color);
 	min-width: 270px;
 	max-width: 280px;
@@ -116,7 +114,7 @@ h3 /* contact, à propos de moi et loisirs */
 {
 	text-transform: uppercase;
 	text-align: center;
-	background-color: var(--main-md-color);
+	background-color: var(--main-color);
 	color: var(--main-bg-color);
 	padding: 0.3rem;
 }
@@ -141,8 +139,8 @@ address
 
 #loisirs i /*bordures et positionnement des icones*/
 {
-	color: var(--main-md-color);
-	border: 3px var(--main-md-color) solid;
+	color: var(--main-color);
+	border: 3px var(--main-color) solid;
 	border-radius: 50%;
 	padding: 0.6rem 0.6rem 0.6rem 0.6rem;
 	margin: 0.6rem 0.6rem 1rem 0.6rem;
@@ -241,7 +239,7 @@ section li /*listes sans puce sous h4*/
 	margin-left: -2.5rem;
 }
 
-/* //////////// 4-2-1/ Le footer de main //////////////////// */
+/* //////////// 4-2-3/ Le footer de main //////////////////// */
 #recommandations /*placer les deux listes en ligne sur toute la largeur*/
 {
 	display: flex;
